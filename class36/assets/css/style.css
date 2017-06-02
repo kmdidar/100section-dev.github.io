@@ -1,0 +1,187 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    background: #f5f6fa;
+
+}
+a:hover { text-decoration: none }
+.single-box-wrap{
+    margin-left: -15px;
+    overflow: hidden;
+}
+.single-promo-box{
+    height: 350px;
+    width: 50%;
+    float: left;
+    display: table;
+    text-align: center;
+    background: #fff;
+}
+.box-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.single-promo-box:nth-child(2) {
+    background: green none repeat scroll 0 0;
+}
+.single-promo-box:nth-child(3) {
+    background: pink none repeat scroll 0 0;
+}
+.single-promo-box:nth-child(2),
+.single-promo-box:nth-child(3),
+.single-promo-box:nth-child(2) .promo-icon:before,
+.single-promo-box:nth-child(3) .promo-icon:before{
+    color: #fff;
+}
+.single-promo-box:nth-child(2) h2:after,
+.single-promo-box:nth-child(3) h2:after,
+.single-promo-box:nth-child(2) .box-btn,
+.single-promo-box:nth-child(3) .box-btn
+{
+    background: #fff;
+}
+
+.single-promo-box:nth-child(1) .box-btn,
+.single-promo-box:nth-child(4) .box-btn
+{
+    color: #fff;
+}
+
+.single-promo-box:nth-child(4) h2:after{
+    background: green;
+}
+.single-promo-box:nth-child(4) .promo-icon:before{
+    color: green;
+}
+.promo-icon:before{
+    font-size: 66px;
+    color: red;
+}
+
+.box-btn {
+    background: green none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #000;
+    display: inline-block;
+    padding: 15px 40px;
+    transition: .3s;
+}
+
+.single-promo-box h2 {
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.single-promo-box h2::after {
+    background: red none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+}
+
+.single-promo-box h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.single-promo-box h2::after {
+    background: red none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+}
+.single-promo-box .box-btn {
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+}
+.box-table-cell {
+    padding-top: 70px;
+    transition: all 0.3s ease 0s;
+}
+.single-promo-box:hover .box-table-cell {
+    padding-top: 0;
+}
+.single-promo-box:hover .box-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.promo-icon {
+    display: inline-block;
+    margin-top: -18px;
+}
+
+.section-btn {
+    margin-top: 30px;
+}
+.section-btn a {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section-btn .bodered-btn {
+    border: 1px solid green;
+    border-radius: 50px;
+    color: #000;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-left: 16px;
+    transition: .3s;
+}
+.right-side-title{
+    padding: 180px 50px;
+}
+
+.section-title > h2 {
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-title i {
+    color: green;
+}
+
+
