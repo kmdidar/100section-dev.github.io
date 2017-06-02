@@ -1,0 +1,110 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #c67b8a; 
+}
+a:hover { text-decoration: none}
+a{
+    color: #14abf5;
+    transition: .3s;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+.single-prizing-box {
+    border: 1px solid #f4f7f7;
+    border-radius: 5px;
+    padding: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: .3s;
+}
+.single-prizing-box h4 {
+    margin-bottom: 40px;
+}
+.single-prizing-box:hover {
+    box-shadow: 0 0 40px #f2f5f6;
+}
+.single-prizing-box.active h4 {
+    margin-bottom: 25px;
+    margin-top: -12px;
+}
+.single-prizing-box h4 span {
+    display: block;
+    font-size: 85%;
+    font-weight: 400;
+    color: #93cb72;
+    margin-top: 10px;
+}
+
+.single-prizing-box.active::before {
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #67b930;
+}
+.single-prizing-box.active {
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+p.prizing-content{
+    color: #14abf5;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+    margin-bottom: 0;
+}
+.prizing-box-content{
+    margin-top: 30px;
+    border-top: 1px solid #f1f5fa;
+    padding-top: 30px;
+}
+.prizing-box-content ul{margin: 0;padding: 0;list-style: none;}
+.prizing-box-content ul li{
+    line-height: 1.4;
+    padding-bottom: 13px;
+}
+.box-btn{
+    background: #14abf5;
+    padding: 15px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: #fff;
+}
+.box-btn:hover{
+    color: #fff;
+    background: #333;
+}
+
