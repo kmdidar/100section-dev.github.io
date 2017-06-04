@@ -1,0 +1,130 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    color: #737678;
+    font-size: 18PX;
+    line-height: 1.9;
+    height: 100%;
+}
+a:hover { text-decoration: none }
+.section-padding{
+    padding: 100px 0;
+}
+
+.prizing-tables {
+    overflow: hidden;
+    padding: 30px 20px;
+}
+.single-prizing-box {
+    background: #fff none repeat scroll 0 0;
+      box-shadow: 0 0 10px #ddd;
+      float: left;
+      position: relative;
+      text-align: center;
+      width: 33.3333%;
+      z-index: 1;
+      margin-top: 30px;
+
+}
+.single-prizing-box.active {
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+  position: relative;
+  width: 34.3333%;
+  z-index: 2;
+  margin-top: 0px;
+  overflow: hidden;
+}
+.przing-header {
+    background: #f9f9f9 none repeat scroll 0 0;
+    color: #898889;
+    font-size: 17px;
+    padding: 40px;
+}
+.przing-header h4 {
+    color: #888888;
+    font-weight: 400;
+    font-size: 25px;
+}
+.przing-header h1 {
+    color: #333;
+    font-size: 50px;
+    font-weight: 400;
+}
+.przing-content {
+    padding: 60px;
+    line-height: 30px;
+}
+.przing-content ul {
+    line-height: 35px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.prizing-btn {
+    border: 1px solid #f91942;
+    border-radius: 50px;
+    color: #f91942;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.prizing-btn:hover {
+  background: #F91942;
+  color: #ffff;
+}
+.active .prizing-btn {
+    background: #f91942 none repeat scroll 0 0;
+    color: #fff;
+}
+.active .przing-header h1, .active .przing-header h4 {
+    color: #fff;
+}
+.active .przing-header {
+    background: #f91942 none repeat scroll 0 0;
+    color: #fff;
+}
+.active .przing-content {
+  margin-bottom: 30px;
+}
+.active .przing-header:after {
+    background: #fff none repeat scroll 0 0;
+    color: #fb0f3d;
+    content: "Featured";
+    font-size: 14px;
+    padding: 5px 50px;
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
