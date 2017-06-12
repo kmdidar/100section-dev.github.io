@@ -1,0 +1,125 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Droid Serif', serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+
+.section-padding{
+   padding: 100px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 16PX;
+    font-weight: 400;
+}
+.section-title h2{
+    font-size: 40PX;
+}
+.single-box-item{background-image: url(../img/medical1.jpg);}
+.box-bg-2{background-image: url(../img/2.jpg);}
+.box-bg-3{background-image: url(../img/3.jpg);}
+.box-bg-4{background-image: url(../img/1.jpg);}
+.box-bg-5{background-image: url(../img/2.jpg);}
+.single-box-item{
+    height: 600px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    position: relative;
+    z-index: 1;
+    position: relative;
+}
+
+.row.no-padding .col-md-4 {
+    padding: 0;
+}
+.row.no-padding {
+    margin: 0;
+}
+.single-box-item {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+}
+.half-size {
+    height: 300px;
+}
+.box-item-hover {
+    height: 90%;
+    left: 5%;
+    position: absolute;
+    top: 5%;
+    width: 90%;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+}
+.single-box-item:hover .box-item-hover {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+}
+.box-item-hover::after {
+    background: #333 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.box-item-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.box-item-tablecell {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.lage-img {
+    color: red;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
