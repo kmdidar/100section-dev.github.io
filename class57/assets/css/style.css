@@ -26,6 +26,9 @@ h6 {
     font-weight: 700;
     font-family: 'Droid Serif', serif;
 }
+html, body{
+    height: 100%;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -37,7 +40,11 @@ a:hover { text-decoration: none }
 .testimonial-bg{
     background-image: url(../img/testimonial-slider-background-black-1.jpg);
     background-color: #333;
-    color: #fff;
+    color: #fff;background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .section-title {
@@ -88,7 +95,7 @@ a:hover { text-decoration: none }
     margin: 0;
     padding: 0;
     height: 260px;
-    overflow-y: scroll;
+    position: relative;
 }
 .testimonial-athore-name h3 {
     color: #fff;
@@ -135,6 +142,7 @@ a:hover { text-decoration: none }
 }
 .ps > div.ps__scrollbar-y-rail{
     opacity: 1;
+    position: absolute;
 }
 
 
