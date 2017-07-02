@@ -1,0 +1,53 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: #6b509d;
+}
+body {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #979797;
+}
+a:hover { text-decoration: none }
+.featured-area{
+    padding-top: 100px;
+}
+.featured-wraper{
+    position: relative;z-index: 1;
+    padding-bottom: 100px;
+}
+.section-title{
+    margin-bottom: 130px;
+}
+img.absoulet-image {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+}
+
+.featured-area h3 {
+    font-size: 22px;
+}
