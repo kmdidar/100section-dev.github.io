@@ -21,7 +21,7 @@
         })
         .infowindow({
             position: kmdidar,
-            content: "",
+            content: "My location",
             pixelOffset: new google.maps.Size(0, -40)
         })
         .then(function (infowindow) {
