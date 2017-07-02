@@ -20,7 +20,9 @@
 
           //Magnific Popup
 		$('.project-list').magnificPopup({
-		   type: 'image'
+		   type: 'image',
+		   closeOnContentClick: true,
+  		   gallery: {enabled: true}
 		});
 
 
