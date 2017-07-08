@@ -1,0 +1,164 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .left-side {
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+    .right-side {
+        width: 100%;
+        position: relative;
+        height: auto;
+        left: 0;
+    }
+    .logo h2 {
+        padding: 0px;
+        position: relative;
+        top: 50px;
+    }
+    .logo:after {
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+        margin-left: -50px;
+    }
+    ul.main-menu {
+        margin-top: 40px;
+        text-align: center;
+        padding-bottom: 10px;
+        left: 0;
+        right: auto;
+    }
+    ul.main-menu li {
+        display: inline-block;
+        padding-bottom: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 3px;
+        text-align: center;
+    }
+    .left-bottom {
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+        bottom: 0;
+        margin-top: 20px;
+    }
+    .right-side {
+        margin-left: 0;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .left-side,
+    .right-side {
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+    .logo:after {
+        width: 100px;
+        height: 100px;
+        margin-top: -30px;
+        margin-bottom: 0;
+        margin-left: -50px;
+    }
+    .left-side {
+        padding-bottom: 10px;
+    }
+    .logo h2 {
+        font-size: 30px;
+        padding-top: 0px;
+        position: relative;
+        padding-top: 50px;
+        display: inline-block;
+    }
+    ul.main-menu {
+        margin-top: 40px
+    }
+    ul.main-menu li {
+        display: inline-block;
+        padding-bottom: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 3px;
+        text-align: center;
+    }
+    .left-bottom {
+        position: absolute;
+        background: #1a1a1a;
+        bottom: 170px;
+        padding: 15px 0px;
+        width: 100%;
+    }
+    ul.main-menu {
+        text-align: center;
+    }
+    a.bodered-btn {
+        padding: 8px 16px;
+        margin-top: 30px;
+    }
+    .scrolldown-icon {
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        left: auto;
+    }
+    .right-side-wrap h1 {
+        font-size: 35px;
+    }
+    .right-side-wrap p {
+        font-size: 15px;
+    }
+
+    .right-side {
+        width: auto;
+        position: relative;
+        height: auto;
+        left: 0;
+        margin: 0;
+    }
+    .logo {
+    margin: 15px 0;
+}
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    .main-menu li {
+        font-size: 16px;
+        font-weight: 500;
+        padding-right: 10px;
+    }
+    .right-side-wrap h1 {
+        font-size: 35px;
+    }
+    .right-side-wrap p {
+        font-size: 15px;
+    }
+    .left-bottom {
+        width: 100%;
+    }
+    .right-side {
+        margin-left: 0;
+    }
+   
+    .right-side {
+        width: 100%;
+        position: relative;
+        height: auto;
+        left: 0;
+    }
+}
