@@ -1,0 +1,97 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+section.section-padding {
+    padding: 80px 0;
+}
+.contact-wraper {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+    color: #fff;
+}
+
+.contact-wraper .row{
+    position: relative;
+    z-index: 2;
+}
+
+.contact-wraper-bg {
+    background-image: url(../img/p4.jpg);
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    top: 0;
+    content: "";
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.contact-wraper-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0176c0;
+    opacity: .7;
+    content: "";
+    z-index: -1;
+}
+.boxed-form {
+    background: #fff;
+    margin-left: 100px;
+    padding: 50px;
+    color: #333;
+    box-shadow: 0 0 5px #999;
+}
+
+.boxed-form input, .boxed-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+}
+
+.boxed-form textarea {
+    height: 120px;
+}
+
+.boxed-form input[type=submit] {
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    background: #888;
+    text-transform: uppercase;
+}
