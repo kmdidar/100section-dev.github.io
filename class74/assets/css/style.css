@@ -36,8 +36,10 @@ html, body{
     height: 100%;
 }
 .wellcome-area{
+    display: flex;
+}
+.wellcome-area{
     background-image: url(../img/Homepage_002.jpg);
-    display: table;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -54,18 +56,15 @@ html, body{
     z-index: -1;
     position: absolute;
 }
-.wellcome-area-linner{
-    display: table-cell;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
+.wellcome-text{
+    margin: auto;
     color: #fff;
 }
-.wellcome-area h1{
+.wellcome-text h1{
     font-size: 50px;
     font-weight: 400;
 }
-.wellcome-area h3{
+.wellcome-text h3{
     font-weight: 400;
 }
 .email-subscribe-form{
