@@ -1,0 +1,100 @@
+/* Base CSS */
+html{
+    box-sizing: border-box;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+html, body{
+    height: 100%;
+}
+.wellcome-area{
+    background-image: url(../img/Homepage_002.jpg);
+    display: table;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.overlay::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+}
+.wellcome-area-linner{
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.wellcome-area h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.wellcome-area h3{
+    font-weight: 400;
+}
+.email-subscribe-form{
+    width: 400px;
+    margin: 40px auto;
+}
+.email-subscribe-form input{
+    border: none;
+    width: 100%;
+    padding: 20px;
+    font-style: italic;
+    border-radius: 40px;
+}
+.email-subscribe-form input[type=submit]{
+    font-style: normal;
+    font-weight: 700;
+    background-color: orange;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.single-countdown-item{
+    font-size: 80px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 20px;
+}
+.single-countdown-item span{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: .7;
+}
