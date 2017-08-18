@@ -1,0 +1,116 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+.section-padding{
+    padding: 80px 0;
+}
+a:hover { text-decoration: none }
+.round-bg:after{
+    background-image: url(../img/sticker.jpg);
+    position: absolute;
+    left: 50%;
+    height: 450px;  width: 450px;
+    top: 50%;
+    margin-left: -225px;
+    content: "";
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    z-index: -1;
+    margin-top: -225px;
+    background-color: #ddd;
+}
+.round-bg{
+    position: relative;
+    z-index: 1 ;
+}
+.single-fetured-item {
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    padding-right: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.feture-icon {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+    top: 0;
+    transition: .3s;
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+}
+
+.feture-icon i.fa {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 50px;
+    line-height: 120px;
+}
+
+.single-fetured-item h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+.single-fetured-item.left-icon {
+    padding-right: 0;
+    padding-left: 170px;
+    text-align: left;
+    margin-right: 90px;
+    margin-left: 0;
+}
+.left-icon .feture-icon{
+    left: 0;
+    right: auto;
+}
+.single-fetured-item.feature-padding-left {
+    margin-left: 0;
+    margin-right: 120px;
+}
+
+.single-fetured-item.left-icon.feature-padding-right {
+    margin-right: 0;
+    margin-left: 120px;
+}
+.feture-icon:hover {background: #3791CC;box-shadow: 0 0 5px #A7A9AC;color: #fff;}
